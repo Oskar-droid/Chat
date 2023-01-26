@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="style/style.css" rel="stylesheet">
+    <title>Chat</title>
+</head>
+<body>
+
+<div id="login-form">
+    <input id="login-form-username" placeholder="Enter username" type="text" autofocus>
+</div>
+
+<div id="main_container">
+    <div id="chat_container">
+        <div class="chat_sides">
+            <div id="chat_child_container">
+                <div class="box" id="box">
+                    <div id="box_child">
+                        <img alt="profile_image" src="img/profile.png">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt eius atque temporibus
+                            expedita modi similique nobis incidunt fuga, illo rerum consequatur repellendus voluptas
+                            voluptatum magnam, cum quia eos provident voluptates dolores blanditiis deserunt
+                            suscipit?
+                            Earum doloribus aliquam accusamus nesciunt quod!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="bottom_container">
+        <div id="bottom_container_child">
+
+            <label for="upload_btn" class="upload_btn_label">upload<input type="file" onchange="upload(this.files)" id="upload_btn" style="opacity: 0; visibility: hidden" /></label>
+            <input class="bottom_input" id="text" placeholder="Message..." type="text">
+            <input class="bottom_input" id="btn" name="submit" type="button" value="Send">
+        </div>
+    </div>
+    <div id="users_box">
+        <div id="users_box_inner">
+            Users
+        </div>
+    </div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="./js/chat.js"></script>
+<script src="./script.js"></script>
+</body>
+
+</html>
